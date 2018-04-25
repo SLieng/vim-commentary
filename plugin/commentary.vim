@@ -98,10 +98,10 @@ nnoremap <silent> <Plug>ChangeCommentary c:<C-U>call <SID>textobject(1)<CR>
 nmap <silent> <Plug>CommentaryUndo :echoerr "Change your <Plug>CommentaryUndo map to <Plug>Commentary<Plug>Commentary"<CR>
 
 if !hasmapto('<Plug>Commentary') || maparg('gc','n') ==# ''
-  xmap gc  <Plug>Commentary
-  nmap gc  <Plug>Commentary
-  omap gc  <Plug>Commentary
-  nmap gcc <Plug>CommentaryLine
+  xmap s  <Plug>Commentary
+  nmap s  <Plug>Commentary
+  omap s  <Plug>Commentary
+  nmap ss <Plug>CommentaryLine
   if maparg('c','n') ==# ''
     nmap cgc <Plug>ChangeCommentary
   endif
